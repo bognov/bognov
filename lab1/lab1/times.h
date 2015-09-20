@@ -7,6 +7,10 @@ class time{
 	int min;
 	int sec;
 public:
+	time();
+	time(int h, int m, int s);
+	time(const time& m);
+	~time();
 	void gettime();
 	void printtime1();
 	void printtime2();

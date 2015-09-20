@@ -5,6 +5,33 @@ using namespace std;
 
 SYSTEMTIME st;
 
+time::time() 
+{ 
+	std::cout << "constructor bez param\n"; 
+	hour = 0;
+	min = 0;
+	sec = 0;
+}   
+
+time::time(int h, int m, int s)
+{ 
+	std::cout << "constructor s param\n";
+	settime(h, m, s);
+}
+
+time::time(const time& m)
+{ 
+	std::cout << "constructor copy\n";       
+	hour = m.hour;
+	min = m.min;
+	sec = m.sec;
+}
+
+time::~time()
+{
+
+}
+
 void time::gettime()
 {
 	GetSystemTime(&st);
