@@ -70,6 +70,21 @@ void time::printtime2()
 
 void time::settime(int a, int n, int c)
 {
+	while (a > 23)
+	{
+		cout << "more than 23, try again ";
+		cin >> a;
+	}
+	while (n > 59)
+	{
+		cout << "more than 59, try again ";
+		cin >> n;
+	}
+	while (c > 59)
+	{
+		cout << "more than 23, try again ";
+		cin >> c;
+	}
 	hour = a;
 	min = n;
 	sec = c;
