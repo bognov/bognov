@@ -16,4 +16,5 @@ public:
 	void printtime2();
 	void settime(int, int, int);
 	void timeofday();
+	void checkhour(int);
 };

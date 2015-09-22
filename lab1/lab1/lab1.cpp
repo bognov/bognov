@@ -29,6 +29,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	q[1].timeofday();
 	q[2] = time(q[1]);
 	q[2].printtime1();
+	int h;
+	cin >> h;
+	for (int i = 0; i < 3; i++)
+		q[i].checkhour(h);
 	return 0;
 }
 

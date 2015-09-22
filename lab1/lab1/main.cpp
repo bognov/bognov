@@ -101,3 +101,11 @@ void time::timeofday()
 	if (hour >= 21 && hour <= 2)
 		cout << "night" << endl;
 }
+
+void time::checkhour(int h)
+{
+	if (h == hour)
+	{
+		printtime2();
+	}
+}
